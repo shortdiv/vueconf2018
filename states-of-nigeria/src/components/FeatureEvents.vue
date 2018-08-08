@@ -9,11 +9,11 @@ export default {
   },
   inject: ["mapContext", "mapId"],
   mounted() {
-    this.mapContext.on("mouseenter", this.mapId, e => {
-      this.onMouseEnter(e);
+    this.mapContext.on("mouseenter", this.mapId, () => {
+      this.onMouseEnter();
     });
-    this.mapContext.on("mouseleave", this.mapId, e => {
-      this.onMouseLeave(e);
+    this.mapContext.on("mouseleave", this.mapId, () => {
+      this.onMouseLeave();
     });
     this.mapContext.on("mousemove", this.mapId, e => {
       this.onMouseMove(e);
