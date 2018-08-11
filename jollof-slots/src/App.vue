@@ -51,6 +51,5 @@ body {
 .container {
   position: absolute;
   text-align: center;
-  bottom: 0;
 }
 </style>

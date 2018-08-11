@@ -58,7 +58,6 @@ body {
 .container {
   position: absolute;
   text-align: center;
-  bottom: 0;
 }
 .pot {
   margin-bottom: 3.2em;
