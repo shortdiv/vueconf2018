@@ -1,0 +1,21 @@
+@mixin risingSteam($dist, $duration, $delay) {
+  animation: move-and-fade $duration linear infinite;
+  animation-delay: $delay;
+
+  @keyframes move-and-fade {
+    0% {
+      opacity: 0;
+      transform: translateY(0) rotate(90deg);
+    }
+    50% {
+      opacity: 0.5;
+    }
+    75% {
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(-$dist) rotate(90deg);
+      opacity: 0;
+    }
+  }
+}
